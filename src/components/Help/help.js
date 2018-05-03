@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import 'antd-mobile/dist/antd-mobile.css';
+// import 'antd-mobile/dist/antd-mobile.css';
 import {List} from 'antd-mobile';
 import questions from '../../questions'
 const Item = List.Item;

@@ -4,7 +4,7 @@ import About from './components/About/about'
 import Battery from './components/Battery/battery'
 import Answer from './components/Answer/answer'
 import Treaty from './components/Treaty'
-import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 const App = () => (
   <Router>

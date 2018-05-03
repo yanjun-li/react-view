@@ -4,7 +4,7 @@ import './style.css'
 
 export default class Treaty extends Component {
   render(){
-    const { match, history} = this.props
+    const { history } = this.props
     return (
        <div className="treaty-wrap">
         <div className="treaty">

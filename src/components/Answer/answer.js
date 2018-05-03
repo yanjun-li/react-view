@@ -5,7 +5,7 @@ import './style.css'
 
 export default class Answer extends Component{
   render(){
-    const { match, location, history } = this.props
+    const { match, history } = this.props
     return (
       <div>
         <div className="answer-page">
