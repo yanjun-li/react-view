@@ -1,0 +1,94 @@
+#body{
+  padding: 20px;
+}
+@media screen and (min-width: 300px) {
+  #body {
+    padding: 60px;
+    font-size: 45px;
+
+  }
+  body.bkgroud{
+    background: url("timg.jpeg") no-repeat;
+    background-size: 100% 100%;
+  }
+  .form-control {
+    font-size: 45px;
+  }
+
+  .form-group-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    padding: 20px;
+
+  }
+
+  .mbtn {
+    width: 80%;
+    font-size: 45px;
+    border-radius: 20px;
+  }
+  .line{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .line p{
+    width: 80%;
+    margin-top: 20px;
+  }
+  div.img{
+    margin-top: 20%;
+    text-align: center;
+  }
+  div.img img{
+    height: 400px;
+    width: 400px;
+  }
+  div.destination{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  div.destination div{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-color: #fff;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  div.destination div img{
+    height: 50%;
+    width: 50%;
+  }
+  div.destination div p{
+    position: absolute;
+    bottom: -80px;
+    font-size: 40px;
+  }
+  div.share_to{
+    margin-top: 60%;
+    text-align: center;
+  }
+  span.spline{
+    display: inline-block;
+    border: 1px solid #5c5c5c;
+    width: 20%;
+    position: relative;
+  }
+  div.title{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+

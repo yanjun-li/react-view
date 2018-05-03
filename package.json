@@ -17,6 +17,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.7.0"
+    "babel-plugin-import": "^1.7.0",
+    "react-app-rewired": "^1.5.2"
   }
 }
