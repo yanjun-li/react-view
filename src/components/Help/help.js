@@ -1,10 +1,29 @@
 import React, {Component} from 'react';
 import 'antd-mobile/dist/antd-mobile.css';
 import {List} from 'antd-mobile';
+import questions from '../../questions'
 const Item = List.Item;
-const Brief = Item.Brief;
 class Help extends Component {
+  constructor(props){
+    super(props)
+    this.handleClick=this.handleClick.bind(this)
+  }
+  handleClick(id){
+    this.props.history.push(`/help/${id}`)
+  }
   render() {
+    const listItem=questions.map((item,id)=>{
+      return (
+        <Item
+          arrow="horizontal"
+          multipleLine
+          key={id}
+          onClick={()=>this.props.history.push(`/help/${id}`)}
+          platform="android">
+          {item.question}
+        </Item>
+      )
+    })
     return (
       <div>
         <List renderHeader={() => '新用户入门'} className="my-list">
@@ -16,7 +35,7 @@ class Help extends Component {
             this
               .props
               .history
-              .push('/about')
+              .push('/help/0')
           }}
             platform="android">
             新用户使用步骤
@@ -50,6 +69,9 @@ class Help extends Component {
           </Item>
         </List>
         <List renderHeader={() => '常见问题'} className="my-list">
+          {listItem}
+        </List>
+        {/* <List renderHeader={() => '常见问题'} className="my-list">
           <Item
             arrow="horizontal"
             multipleLine
@@ -86,7 +108,7 @@ class Help extends Component {
             platform="android">
             智驾盒子安装在车辆什么位置？
           </Item>
-        </List>
+        </List> */}
       </div>
     );
   }

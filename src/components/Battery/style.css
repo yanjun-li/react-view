@@ -1,0 +1,22 @@
+.battery-info table,tr,th,td{
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+
+  text-align: center;
+}
+.battery-info th{
+  height: 2.5rem;
+}
+.battery-info td{
+  height: 3rem;
+}
+h3.title{
+  text-align: center;
+}
+.warn{
+  color: orangered;
+}
+
+.low{
+  color: coral;
+}

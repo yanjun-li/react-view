@@ -1,0 +1,11 @@
+.treaty{
+  padding: 1rem 1.5rem;
+}
+.treaty h2{
+  text-align: center;
+}
+
+.treaty-wrap{
+  position: relative;
+  padding-bottom: 5rem;
+}
